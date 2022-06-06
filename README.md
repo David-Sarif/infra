@@ -28,9 +28,11 @@
   
   &nbsp;&nbsp;&nbsp;&nbsp;`User %behind_bastion_user%`
   
- &nbsp;&nbsp;&nbsp;&nbsp;`ProxyCommand ssh -W %h:%p behind_bastion_name`
+ &nbsp;&nbsp;&nbsp;&nbsp;`ProxyCommand ssh -W %h:%p %bastion_name%`
   
  &nbsp;&nbsp;&nbsp;&nbsp;`IdentityFile %identity file behind_bastion машины%`
+ 
+ Можно использовать один ключ на несколько машин, а можно свой на каждую
  
  Проверяем `ssh behind_bastion_name`
  
