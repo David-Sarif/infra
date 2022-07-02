@@ -12,6 +12,8 @@ source "yandex" "ubuntu-nginx" {
   zone                = "ru-central1-a"
 }
 
+# this is declaring variables section
+
 variable "token" {
 type = string
 default = ""
@@ -37,7 +39,9 @@ default = ""
  
 build {
   sources = ["source.yandex.ubuntu-nginx"]
- 
+
+# this commands will obviously install nginx
+
   provisioner "shell" {
     inline = ["sudo apt-get update -y",
               "sudo apt-get install -y nginx",
