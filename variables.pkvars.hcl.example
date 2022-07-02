@@ -1,0 +1,4 @@
+token = "Your_token"
+folder_id = "Your folder id"
+image_description   = "your description for this image"
+subnet_id           = "your subnet id"
