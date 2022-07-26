@@ -9,6 +9,14 @@
 -W Requests that standard input and output on the client be forwarded to host on port over the secure channel. -o Can be used to give options in the format used in the configuration file. -i Selects a file from which the identity (private key) for public key authentication is read.
 
 
+## Так получше ##
+
+`ssh -t user@host ssh user@internal-host`
+
+
+## ##
+
+
 ### Вариант №2: Добавить информацию о бастионе и внутреннем узле в ~/.ssh/config:
 
 Для начала оформим **ssh-config**
